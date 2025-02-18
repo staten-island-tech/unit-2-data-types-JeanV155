@@ -1,12 +1,19 @@
-def greet(): 
-    input("how was the service")
+def greet():
+    service = input("How was the service (bad, okay, good, or great)? ").lower()  # Get the service input and make it lowercase
+    bill = float(input("What was your bill amount? "))  # Get the bill value and convert to float
 
+    if service == "bad":
+        tip = 0  # 0% tip for bad service
+    elif service == "okay":
+        tip = 0.15 * bill  # 15% tip for okay service
+    elif service == "good":
+        tip = 0.20 * bill  # 20% tip for good service
+    elif service == "great":
+        tip = 0.25 * bill  # 25% tip for great service
+    else:
+        print("Invalid input for service")
+        return  # Exit the function if invalid input is entered
 
+    print(f"Your tip is ${tip:.2f}")
 
-service = good
-if service == bad:
-    float(0)
-if service == okay:
-    float(15)
-if service == 
-    print('cold')
+greet()

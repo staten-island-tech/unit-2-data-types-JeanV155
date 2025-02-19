@@ -6,7 +6,7 @@ number = input("please enter a number: ")
 celebrity = input("please enter a celebrity")
 
 # Create a sentence using f-string
-sentence = f"Today, I will {verb1} and {verb2} with {number} {noun}s  and tell {celebrity} all about it!" 
+sentence = f"Today, I will {verb1} and {verb2} with {number} {noun}s and tell {celebrity} all about it!" 
 
 # print the formatted sentence 
 print(sentence)

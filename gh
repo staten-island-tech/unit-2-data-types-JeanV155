@@ -1,0 +1,6 @@
+# Create a list of fruits
+fruits = ['apple', 'banana', 'cherry']
+
+
+# Print the updated list
+print(fruits)

@@ -1,0 +1,17 @@
+import math
+
+def find_greatest_common_factors(numbers):
+    gcf = numbers[0]
+    
+    for number in numbers[1:]:  # Loop through the rest of the numbers
+        gcf = math.gcd(gcf, number)  # Update the GCF with the GCD of gcf and current number
+        
+    return gcf 
+
+numbers = [100, 25]
+
+# Call the function with the numbers list
+results = find_greatest_common_factors(numbers)
+
+# Print the result
+print(results)

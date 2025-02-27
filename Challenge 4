@@ -1,5 +1,5 @@
-
 def find_gcf(a, b):
+
     if a == b:
         return a  # If both numbers are the same, GCF is the number itself
     elif a % b == 0:
@@ -10,8 +10,13 @@ def find_gcf(a, b):
         if a > b:
             return find_gcf(a - b, b)  # Reduce the larger number
         else:
-            return find_gcf(a, b - a)  # Reduce the larger number
+            return find_gcf(a, b - a)  # Reduce the larger number  
 
+ 
+# Get user input
+a = int(input("Enter the first number: "))  # Get the first number from the user
+b = int(input("Enter the second number: "))  # Get the second number from the user
 
-print(find_gcf(100, 50))  
-
+# Call the find_gcf function and display the result
+gcf = find_gcf(a, b)
+print(f"The greatest common factor of {a} and {b} is {gcf}")

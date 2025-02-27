@@ -1,3 +1,5 @@
+input = int(f"put in 2 numbers:")
+
 def find_factors(number):
     # List to store the factors
     factors = []
@@ -10,6 +12,5 @@ def find_factors(number):
     return factors
 
 # Example usage:
-num = 67
 
 print(f"Factors of {num}: {find_factors(num)}")

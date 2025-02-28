@@ -1,4 +1,6 @@
-input = int(f"put in 2 numbers:")
+
+
+
 
 def find_factors(number):
     # List to store the factors
@@ -13,4 +15,14 @@ def find_factors(number):
 
 # Example usage:
 
-print(f"Factors of {num}: {find_factors(num)}")
+# Get user input
+a = int(input("Enter the first number: "))  # Get the first number from the user
+
+
+# Find factors of both numbers
+factors_a = find_factors(a)
+
+
+# Display results
+print(f"The factors of {a} are: {factors_a}")
+

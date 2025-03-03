@@ -1,0 +1,23 @@
+def greet(): 
+    service = input("How was the service (bad, okay, good, or great)? ")
+    bill = float(input("What was your bill amount? "))  # Convert bill input to float
+
+    if service == "bad":
+        tip = 0  # 0% tip for bad service
+    elif service == "okay":
+        tip = 0.15 * bill  # 15% tip for okay service
+    elif service == "good":
+        tip = 0.20 * bill  # 20% tip for good service
+    elif service == "great":
+        tip = 0.25 * bill  # 25% tip for great service
+    else:
+        print("Invalid input for service")
+        return  # Exit the function if invalid input is entered
+
+    tip = int(tip)  # Convert tip to an integer
+    total = bill + tip  # Calculate total amount to be paid
+
+    print(f"Your tip is ${tip:.2f}")
+    print(f"Your total amount to be paid is ${total:.2f}")
+
+greet()

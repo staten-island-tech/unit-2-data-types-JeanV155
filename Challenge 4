@@ -1,16 +1,9 @@
 def find_gcf(a, b):
 
-    if a == b:
-        return a  # If both numbers are the same, GCF is the number itself
-    elif a % b == 0:
-        return b  # If 'b' divides 'a' completely, 'b' is the GCF
-    elif b % a == 0:
-        return a  # If 'a' divides 'b' completely, 'a' is the GCF
-    else:
-        if a > b:
-            return find_gcf(a - b, b)  # Reduce the larger number
-        else:
-            return find_gcf(a, b - a)  # Reduce the larger number  
+    min_num = min(a, b)  # Start checking from the smaller number
+    for i in range(min_num, 0, -1):  # Decreasing loop from min_num to 1
+        if a % i == 0 and b % i == 0:  # Check if i is a factor of both
+            return i  # Return the first (largest) common factor
 
  
 # Get user input

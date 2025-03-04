@@ -1,22 +1,28 @@
 price = int(input("Enter price of item one by one: "))
 finished = input("IF done, enter Done: ")
-def cost (price):
+def cost(price):
     bill.append(price)
-    for i in bill:
-        price + i
+   
 
 bill = []
+cost(price)
 while finished != "Done": 
-      print(finished)
-      print(cost(price))
+        price = int(input("Enter price of item one by one: "))
+        cost(price)
+        finished = input("IF done, enter Done: ")
+          
 
-        
+
+def finalcost(i):
+    for price in price:
+         bill = bill + i
+
     
+finalcost(i)
 
-print("final cost is: {bill}")
+print(bill)
+
+
  
-for (i) in bill:
-    i + bill
+
  
-if bill > 100:
-    bill - 0.1 

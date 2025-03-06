@@ -13,12 +13,16 @@ while finished != "Done":
           
 
 
-def finalcost(i):
-    for price in price:
-         bill = bill + i
+finalcost = sum(bill) 
+
+if finalcost > 100:
+    print(finalcost - 0.1*finalcost)
+else:
+     print(finalcost)
 
     
-finalcost(i)
+
+
 
 print(bill)
 
